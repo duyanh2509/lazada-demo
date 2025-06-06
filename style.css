@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-orange: #f57224;
+}
+
 body {
   background-color: #00000008;
   font-family: "Noto Sans", sans-serif;
@@ -19,28 +23,17 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
-  padding: 0px 17px;
-  font-size: 12px;
+  gap: 15px;
+  padding: 0 12px;
+  font-size: 11px;
   align-items: center;
-  line-height: 25px;
+  line-height: 22px;
+  flex-wrap: wrap;
   cursor: pointer;
 }
 
 .topbar-lists a {
   text-decoration: none;
-}
-
-.feedback {
-  color: #ff00ff;
-}
-
-.safe-sell-care {
-  color: #0f1568;
-}
-
-.rest {
-  color: #9e9e9e;
 }
 
 .feedback {
@@ -59,24 +52,24 @@ body {
 }
 
 .feedback:hover {
-  color: #f57224;
+  color: var(--primary-orange);
   cursor: pointer;
 }
 
 .safe-sell-care:hover {
-  color: #f57224;
+  color: var(--primary-orange);
   cursor: pointer;
 }
 
 .rest:hover {
-  color: #f57224;
+  color: var(--primary-orange);
   cursor: pointer;
 }
 
 .search-section {
   background-color: white;
   width: 100%;
-  padding: 10px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #eee;
 }
 
@@ -85,13 +78,12 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 0 15px;
+  gap: 12px;
+  padding: 0 12px;
 }
 
 .container-logo-search-order {
-  flex: 0 0 auto;
-  max-width: 120px;
+  max-width: 100px;
 }
 
 .logo-img img {
@@ -112,21 +104,22 @@ body {
 
 .search {
   flex-grow: 1;
-  padding: 10px 15px;
-  font-size: 14px;
-  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 13px;
+  border: 0.3px solid #ccc;
   border-radius: 2px 0 0 2px;
-  outline: none;
+  background-color: #eff0f5;
 }
 
 .button-submit {
-  background-color: #f57224;
+  background-color: var(--primary-orange);
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 15px;
   cursor: pointer;
   border-radius: 0 2px 2px 0;
   font-weight: 600;
+  font-size: 13px;
 }
 
 .order {
@@ -142,11 +135,12 @@ body {
 }
 
 .order img {
-  max-height: 25px;
+  max-height: 20px;
   object-fit: contain;
 }
+
 .month-deal img {
-  max-height: 40px;
+  max-height: 35px;
   object-fit: contain;
 }
 
@@ -160,16 +154,11 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1188px;
-  gap: 10px;
+  gap: 8px;
 }
 
 .left-side {
   flex: 5;
-}
-
-.banner-item-left {
-  width: 100%;
-  height: auto;
 }
 
 .banner-item-left img {
@@ -185,16 +174,214 @@ body {
     linear-gradient(0deg, #fff, #fff);
 }
 
+.content-right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.try-lazada {
+  display: flex;
+  width: 100%;
+}
+
+.first-logo {
+  height: 38px;
+  width: 38px;
+}
+
+.first-logo img {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.describe {
+  color: #6c1d00;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-left: 5px;
+  max-width: 120px;
+}
+
+.laz-utilities {
+  display: flex;
+  width: 100%;
+}
+
+.background-utilities {
+  background-size: 100%;
+  height: 140px;
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.background-utilities img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.icon-top-utilities {
+  height: 10px;
+  width: 9px;
+}
+
+.icon-top-utilities img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-laz-utilities {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 7px;
+  margin-top: 7px;
+  top: 0;
+  left: 0;
+}
+
+.top-laz-utilities-describe {
+  font-size: 9px;
+  color: white;
+  font-weight: bolder;
+}
+
+.freeship-voucher {
+  position: absolute;
+  top: 60px;
+  left: 9px;
+}
+
+.freeship {
+  display: flex;
+}
+
+.voucher {
+  display: flex;
+}
+
+.free-ship-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.voucher-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.free-ship-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.voucher-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.freeship-describe {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.voucher-describe {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.down-to-enjoy {
+  color: white;
+  font-size: 11px;
+  max-width: 150px;
+  text-align: center;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  font-weight: bolder;
+  z-index: 10;
+}
+
+.qr-download {
+  width: 100%;
+  height: 80px;
+  margin-top: 8px;
+}
+
+.qr-download-container {
+  display: flex;
+}
+
+.qr-code {
+  width: 80px;
+  height: 80px;
+}
+
+.qr-code img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.platform-download {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.platform-download-img1 {
+  width: 100%;
+  height: 50%;
+}
+
+.platform-download-img2 {
+  width: 100%;
+  height: 50%;
+}
+
+.platform-download-img1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.platform-download-img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.note {
+  font-size: 9px;
+  color: #2e3346;
+  margin: 5px 0 0 3px;
+}
+
 .lazmall-voucher-topup {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 20px 10px;
+  padding: 15px 8px;
 }
 
 .container-lazmall-voucher-topup {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   max-width: 1188px;
   width: 100%;
   justify-content: space-between;
@@ -220,7 +407,7 @@ body {
   text-align: start;
   width: 50%;
   height: 130px;
-  gap: 10px;
+  gap: 8px;
 }
 
 .icon-text img {
@@ -231,21 +418,8 @@ body {
 
 .text p {
   color: #2e3346;
-  font-size: 16px;
-  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
   color: #555;
-}
-
-.text-voucher {
-  transition: color 0.3s ease;
-}
-
-.text-lazmal {
-  transition: color 0.3s ease;
-}
-
-.text-card {
-  transition: color 0.3s ease;
 }
 
 .text-voucher:hover {
@@ -267,10 +441,6 @@ body {
   width: 138px;
   height: 130px;
   object-fit: cover;
-}
-
-.banner-sale {
-  width: 100%;
 }
 
 .banner-sale .sale-container {
@@ -308,27 +478,21 @@ body {
   background-color: #fff;
 }
 
-.flash-deal-title {
-  padding-bottom: 10px;
-}
-
 .flash-deal-title h2 {
-  font-size: 22px;
+  font-size: 20px;
   color: #424242;
-  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
 }
 
 .deal-tabs {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  font-family: "Noto Sans", sans-serif;
+  gap: 6px;
+  font-size: 13px;
 }
 
 .on-sell {
-  color: #f57224;
+  color: var(--primary-orange);
   font-weight: bolder;
 }
 
@@ -339,14 +503,21 @@ body {
 .countdown {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
+}
+
+.watch-more-tele {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  border: 1px solid gray;
 }
 
 .view-all {
-  font-size: 13px;
-  color: #f57224;
-  border: 1px solid #f57224;
-  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--primary-orange);
+  border: 1px solid var(--primary-orange);
+  padding: 5px 10px;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bolder;
@@ -355,14 +526,15 @@ body {
 .countdown span {
   background-color: #d0011b;
   color: white;
-  padding: 4px 8px;
+  padding: 3px 6px;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 .deal-product-list {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1188px;
 }
 
@@ -371,6 +543,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
+  min-width: 180px;
   text-align: center;
   background-color: #fff;
   margin-bottom: 7px;
@@ -385,30 +558,31 @@ body {
 
 .deal-item img {
   width: 100%;
-  height: 160px;
+  height: 150px;
   object-fit: contain;
   margin-bottom: 8px;
 }
 
 .name {
-  font-size: 14px;
+  font-size: 13px;
   color: #000000;
   overflow: hidden;
-  font-family: "Noto Sans", sans-serif;
 }
 
 .price {
-  font-size: 18px;
-  color: #f57224;
+  font-size: 16px;
+  color: var(--primary-orange);
   margin-top: 4px;
-  text-align: start;
+  text-align: center;
 }
+
 .old-discount {
   display: flex;
+  justify-content: center;
 }
 
 .old {
-  font-size: 12px;
+  font-size: 11px;
   color: #9e9e9e;
   text-decoration: line-through;
   text-align: start;
@@ -416,13 +590,14 @@ body {
 
 .discount {
   all: unset;
-  font-size: 12px;
+  font-size: 11px;
   margin-left: 4px;
 }
 
 .lazmall-section {
   width: 100%;
 }
+
 .lazmall-container {
   width: 100%;
   max-width: 1188px;
@@ -430,32 +605,56 @@ body {
 }
 
 .lazmall-grid {
-  display: flex;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .lazmall-item {
-  flex: 1;
+  min-width: 180px;
   position: relative;
   padding: 4px;
-  box-sizing: border-box;
+  height: 270px;
   background-color: #fff;
   transition: box-shadow 0.1s ease;
 }
 
-.lazmall-item:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.picture-container {
+  width: 100%;
+  height: 188px;
+  position: relative;
+}
+
+.lazmall-img {
+  width: 100%;
+  height: 100%;
 }
 
 .product-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .shop-logo {
+  width: 52px;
+  height: 52px;
+  background-color: white;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+.lazmall-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .shop-name {
@@ -473,7 +672,6 @@ body {
   max-width: 1188px;
   width: 100%;
   margin: auto;
-  box-sizing: border-box;
 }
 
 .categories-container .category-list {
@@ -487,7 +685,6 @@ body {
   border-bottom: 1px solid #eaeaea;
   padding: 20px 0;
   text-align: center;
-  font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   color: #333;
   cursor: pointer;
@@ -519,16 +716,15 @@ body {
 
 .item-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(189px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 10px;
-  max-width: 1188px;
-  margin: 0 auto;
 }
 
 .list-items {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   flex: 1;
+  min-width: 180px;
   text-decoration: none;
   transition: box-shadow 0.1s ease;
 }
@@ -538,7 +734,7 @@ body {
 }
 
 .item {
-  width: 189px;
+  width: 100%;
   background-color: white;
   border: 1px solid #dcd8d8;
   display: flex;
@@ -565,14 +761,9 @@ body {
   justify-content: space-between;
 }
 
-.item-name {
-  text-decoration: none;
-}
-
 .item-name p {
   font-size: 14px;
   overflow: hidden;
-  font-family: "Noto Sans", sans-serif;
   max-height: 38px;
   color: black;
 }
@@ -583,9 +774,8 @@ body {
 }
 
 .item-price {
-  color: #f57224;
+  color: var(--primary-orange);
   font-weight: bolder;
-  font-family: "Noto Sans", sans-serif;
 }
 
 .item-discount {
@@ -631,6 +821,7 @@ body {
 hr {
   width: 100%;
   max-width: 1188px;
+
   margin: 0 auto;
   opacity: 30%;
 }
@@ -649,10 +840,12 @@ footer {
 .footer-first-thumnail-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .thumnail-img {
   flex: 1;
+  min-width: 200px;
   align-items: center;
   justify-content: center;
   transition: box-shadow 0.1s ease;
@@ -664,8 +857,9 @@ footer {
 }
 
 .thumnail-img img {
-  width: auto;
-  height: 97px;
+  width: 100%;
+  max-height: 97px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -675,6 +869,7 @@ footer {
   margin: 0 auto;
   display: flex;
   padding: 20px 0 25px;
+  justify-content: space-between;
 }
 
 .contact {
@@ -685,13 +880,12 @@ footer {
   color: #0f136d;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Noto Sans", sans-serif;
 }
+
 .info-detail {
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  font-family: "Noto Sans", sans-serif;
 }
 
 .address {
@@ -709,4 +903,276 @@ footer {
 
 .info-detail a:hover {
   border-bottom-color: #0f136d;
+}
+
+.laz-alway-better {
+  display: flex;
+  flex-direction: column;
+}
+
+.laz-alway-better-top {
+  display: flex;
+}
+
+.laz-alway-better-logo {
+  display: flex;
+}
+
+.laz-alway-better-logo-img {
+  max-width: 42px;
+  max-height: 42px;
+}
+
+.laz-alway-better-logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.laz-alway-better-logo-title {
+  padding: 0 15px;
+}
+
+.laz-alway-better-logo-title1 {
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  color: #f36f36;
+}
+
+.laz-alway-better-logo-title2 {
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  color: #0f136d;
+}
+
+.available-platform {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.licening-company {
+  margin-top: 5px;
+  max-width: 594px;
+}
+
+.licening-company p {
+  font-size: 12px;
+  font-family: "Noto Sans", sans-serif;
+  color: #0f136d;
+}
+
+.payment-delivery-verified {
+  width: 100%;
+  background-color: white;
+}
+
+.payment-delivery-verified-title {
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  color: #183544;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.payment-delivery-verified-container {
+  display: flex;
+  width: 100%;
+  max-width: 1188px;
+  margin: 0 auto;
+}
+
+.payment-delivery-verified-area {
+  flex: 1;
+}
+
+.payment-platform {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-platform-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.payment-platform-img img {
+  max-height: 39px;
+  width: auto;
+}
+
+.verified-platform {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.verified-platform-img {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.verified-platform-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verified-platform-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.lazada-overview-section {
+  width: 100%;
+}
+
+.lazada-overview-section-container {
+  display: flex;
+  width: 100%;
+  max-width: 1188px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.lazada-overview-content {
+  flex: 1;
+  padding-right: 4%;
+}
+
+.lazada-overview-content h2 {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 0 5px;
+}
+
+.lazada-overview-content p {
+  color: rgb(136, 136, 136);
+  font-size: 12px;
+}
+
+@media (max-width: 739px) {
+  .header-TopBar {
+    display: none;
+  }
+  .right-side {
+    display: none;
+  }
+
+  .lazmall-voucher-topup {
+    display: none;
+  }
+
+  .lazmall-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .deal-product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .order {
+    display: none;
+  }
+
+  .month-deal {
+    display: none;
+  }
+
+  .footer-info-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .view-all {
+    display: none;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .order {
+    display: none;
+  }
+
+  .month-deal {
+    display: none;
+  }
+
+  .lazmall-voucher-topup {
+    display: none;
+  }
+  .lazmall-voucher-topup {
+    padding: 10px 5px;
+    margin: 0 auto;
+  }
+  .container-lazmall-voucher-topup {
+    min-width: 740px;
+    max-width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .topup-item {
+    min-width: 220px;
+    height: 110px;
+    padding: 12px;
+    align-items: center;
+  }
+
+  .icon-text {
+    height: 110px;
+    width: 45%;
+    gap: 6px;
+  }
+
+  .icon-text img {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  .thumbnail {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+  }
+
+  .item-for-you-container {
+    min-width: 740px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .item-container {
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 10px;
+  }
+
+  .list-items {
+    min-width: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .watch-more-tele {
+    display: none;
+  }
 }
